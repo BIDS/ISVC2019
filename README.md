@@ -9,3 +9,5 @@ Scientific Python and Image Processing tutorial - ISVC'19
 
 Looking forward to teaching you,
 Dani, Alex & Stefan
+
+Look this: [cell tutorial](https://github.com/scikit-image/skimage-tutorials/blob/master/lectures/three_dimensional_image_processing.ipynb)
