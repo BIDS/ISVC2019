@@ -11,16 +11,17 @@ required packages installed in order to participate fully.
 - Python
 
   If you are new to Python, please install the
-  [Anaconda distribution](https://www.continuum.io/downloads) for
+  [Anaconda distribution](https://www.anaconda.com/downloads) for
   **Python version 3** (available on OSX, Linux, and Windows).
   Everyone else, feel free to use your favorite distribution, but
   please ensure the requirements below are met:
 
-  - `numpy` >= 1.12
-  - `scipy` >= 0.19
-  - `matplotlib` >= 2.0
-  - `scikit-image` >= 0.13
-  - `scikit-learn` >= 0.18
+  - `numpy` >= 1.16
+  - `scipy` >= 1.3
+  - `matplotlib` >= 3.1
+  - `scikit-image` >= 0.15
+  - `scikit-learn` >= 0.21
+  - `itk` >= 4.12
 
   Please see "Test your setup" below.
 
