@@ -25,6 +25,19 @@ required packages installed in order to participate fully.
 
   Please see "Test your setup" below.
 
+- ITK
+
+  ITK is an open-source toolkit for multidimensional image analysis.
+  If you are using Anaconda, it is easy to install ITK using the
+  [conda-forge](https://conda-forge.org/) repository, through the
+  following command:
+
+  `$ conda install -c conda-forge itk`
+
+  You can also use the PyPI package:
+
+  `$ pip install itk`
+
 - Jupyter
 
   The lecture material includes Jupyter notebooks.  Please follow the
@@ -48,17 +61,19 @@ the workshop, so please execute `git pull` to update.
 ## Test your setup
 
 Please switch into the repository you downloaded in the previous step,
-and run `check_setup.py` to validate your installation.
+and run `python check_setup.py` to validate your installation.
 
-On my computer, I see (but your version numbers may differ):
+On my computer, the previous command results in:
 
 ```
-[✓] scikit-image  0.13.1
-[✓] numpy         1.13.3
-[✓] scipy         1.0.0
-[✓] matplotlib    2.1.0
-[✓] notebook      5.0.0
-[✓] scikit-learn  0.19.1
+[✓] scikit-image  0.16.dev0
+[✓] numpy         1.16.4
+[✓] scipy         1.3.0
+[✓] matplotlib    3.1.0
+[✓] notebook      6.0.0
+[✓] scikit-learn  0.21.2
 ```
+
+Please note your version numbers may differ.
 
 **If you do not have a working setup, please contact the instructors.**
