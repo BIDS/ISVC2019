@@ -1,5 +1,5 @@
-Scientific Python and Image Processing tutorial - ISVC'19
-=======================================================
+Scientific Python and Image Processing tutorial - ISVC '19
+==========================================================
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/stefanv/imagexd_scientific_python/master?filepath=index.ipynb)
 
