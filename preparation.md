@@ -16,12 +16,12 @@ required packages installed in order to participate fully.
   Everyone else, feel free to use your favorite distribution, but
   please ensure the requirements below are met:
 
-  - `numpy` >= 1.16
-  - `scipy` >= 1.3
-  - `matplotlib` >= 3.1
+  - `numpy` >= 1.12
+  - `scipy` >= 1.0
+  - `matplotlib` >= 2.1
   - `scikit-image` >= 0.15
-  - `scikit-learn` >= 0.21
-  - `itk` >= 4.12
+  - `scikit-learn` >= 0.18
+  - `itk` >= 4.1
 
   Please see "Test your setup" below.
 
