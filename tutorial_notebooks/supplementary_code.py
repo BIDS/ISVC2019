@@ -24,15 +24,14 @@ def slice_in_3D(axis, shape, plane):
     Originally from:
     https://stackoverflow.com/questions/44881885/python-draw-parallelepiped
     '''
-
     Z = np.array([[0, 0, 0],
                   [1, 0, 0],
                   [1, 1, 0],
-                  [1, 0, 1],
                   [0, 1, 0],
-                  [0, 1, 1],
                   [0, 0, 1],
-                  [1, 1, 1]])
+                  [1, 0, 1],
+                  [1, 1, 1],
+                  [0, 1, 1]])
 
     Z = Z * shape
 
@@ -60,10 +59,9 @@ def slice_in_3D(axis, shape, plane):
     )
 
     verts = np.array([[[0, 0, 0],
-                       [0, 1, 0],
                        [0, 0, 1],
-                       [0, 1, 1]]])
-
+                       [0, 1, 1],
+                       [0, 1, 0]]])
     verts = verts * (60, 256, 256)
     verts += [plane, 0, 0]
 
@@ -90,12 +88,12 @@ def slice_explorer(data, cmap='gray'):
 
     @interact(plane=(0, N - 1))
     def display_slice(plane=34):
-        fig, ax = plt.subplots(figsize=(20, 5))
+        fig, axis = plt.subplots(figsize=(20, 5))
 
         ax_3D = fig.add_subplot(133, projection='3d')
 
         show_plane(axis, data[plane], title="Plane {}".format(plane), cmap=cmap)
-        slice_in_3D(ax_3D, plane)
+        slice_in_3D(ax_3D, N, plane)
 
         plt.show()
 
