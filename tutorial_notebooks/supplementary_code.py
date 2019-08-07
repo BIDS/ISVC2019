@@ -3,6 +3,8 @@ import numpy as np
 
 from ipywidgets import interact
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
+from scipy import stats
+from skimage import exposure, io
 
 
 def show_plane(axis, plane, cmap="gray", title=None):
@@ -125,3 +127,20 @@ def plot_hist(axis, data, title=None):
         axis.set_title(title)
 
     return None
+
+
+
+def results_from_part_1():
+
+    data = io.imread("images/cells.tif")
+
+    vmin, vmax = stats.scoreatpercentile(data, (0.5, 99.5))
+    rescaled = exposure.rescale_intensity(
+        data,
+        in_range=(vmin, vmax),
+        out_range=np.float32
+    )
+
+    equalized = exposure.equalize_hist(data)
+
+    return data, rescaled, equalized
