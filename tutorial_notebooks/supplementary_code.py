@@ -62,7 +62,7 @@ def slice_in_3D(axis, shape, plane):
     verts = np.array([[[0, 0, 0],
                        [0, 1, 0],
                        [0, 0, 1],
-                       [0, 1, 1]])
+                       [0, 1, 1]]])
 
     verts = verts * (60, 256, 256)
     verts += [plane, 0, 0]
