@@ -8,7 +8,7 @@ required packages installed in order to participate fully.
 
 ## Software required
 
-- Python
+- **Python**
 
   If you are new to Python, please install the
   [Anaconda distribution](https://www.anaconda.com/downloads) for
@@ -25,7 +25,7 @@ required packages installed in order to participate fully.
 
   Please see "Test your setup" below.
 
-- ITK
+- **ITK**
 
   ITK is an open-source toolkit for multidimensional image analysis.
   If you are using Anaconda, it is easy to install ITK using the
@@ -38,7 +38,7 @@ required packages installed in order to participate fully.
 
   `$ pip3 install --upgrade itk`
 
-- Jupyter
+- **Jupyter**
 
   The lecture material includes Jupyter notebooks.  Please follow the
   [Jupyter installation instructions](http://jupyter.readthedocs.io/en/latest/install.html),
