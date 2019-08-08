@@ -1,2 +1,3 @@
 ~.docx
 tutorial_notebooks/.ipynb_checkpoints
+tutorial_notebooks/__pycache__
