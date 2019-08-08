@@ -1,3 +1,4 @@
 ~.docx
 tutorial_notebooks/.ipynb_checkpoints
 tutorial_notebooks/__pycache__
+tutorial_notebooks/hs_err_pid*
