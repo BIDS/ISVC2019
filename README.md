@@ -8,7 +8,7 @@ Analysis and visualization of 3D data in Python - ISVC '19
 
 **Objectives:**
 
-a) a brief overview of scikit-image and related packages in the scientific Python ecosystem;
+a) a brief overview of scikit-image and related packages in the scientific Python ecosystem, including how to create your environment;
 
 b) filtering, segmentation and data extraction of large 2D and 3D images;
 
