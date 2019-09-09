@@ -1,9 +1,7 @@
-from mpl_toolkits.mplot3d import Axes3D
+selected_cell = 5
 
-fig = plt.figure()
+volume = (relabeled == regionprops[selected_cell].label).transpose(1, 2, 0)
 
-ax = fig.gca(projection='3d')
-ax.scatter(verts[:,0],verts[:,1],verts[:,2],label='blob:'+str(selected_cell), c=np.random.rand(len(verts)))
-ax.legend()
-
-plt.show()
+verts, faces, _, _ = measure.marching_cubes_lewiner(volume, level=0, spacing=tuple(spacing))
+surface_area_actual = measure.mesh_surface_area(verts, faces)
+print("Surface area (actual): {:0.2f}".format(surface_area_actual))
