@@ -33,3 +33,35 @@ def draw_H(image, coords, color=(0, 255, 0)):
     canvas[11:14] = color
 
     return image_with_H
+
+"""
+Exercise: (⏰ 5 min) Display the different color channels of `chelsea`
+along, each as a gray-scale image.
+"""
+
+chelsea = data.chelsea()
+
+# First, assign each color channel to a different variable.
+channel_r = chelsea[:, :, 0]
+channel_g = chelsea[:, :, 1]
+channel_b = chelsea[:, :, 2]
+
+# Then, display the image and the red, green and blue channels.
+_, (ax_r, ax_g, ax_b, ax_color) = plt.subplots(nrows=1, ncols=4, figsize=(16, 5))
+
+ax_r.imshow(channel_r, cmap='gray')
+ax_r.set_title('Red channel')
+ax_r.axis('off')
+
+ax_g.imshow(channel_g, cmap='gray')
+ax_g.set_title('Green channel')
+ax_g.axis('off')
+
+ax_b.imshow(channel_b, cmap='gray')
+ax_b.set_title('Blue channel')
+ax_b.axis('off')
+
+# Here we rebuild the color image stacking the R, G, and B layers again.
+ax_color.imshow(np.stack([channel_r, channel_g, channel_b], axis=2))
+ax_color.set_title('All channels');
+ax_color.axis('off')
